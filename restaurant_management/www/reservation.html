@@ -1,0 +1,23 @@
+<!-- reservation.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Book a Table</title>
+</head>
+<body>
+    <h1>Book a Table</h1>
+    <form action="/api/method/restaurant_management.api.make_reservation" method="POST">
+        <label for="customer">Customer Name:</label>
+        <input type="text" id="customer" name="customer"><br>
+        <label for="table">Table Number:</label>
+        <input type="text" id="table" name="table"><br>
+        <label for="reservation_date">Date:</label>
+        <input type="date" id="reservation_date" name="reservation_date"><br>
+        <label for="reservation_time">Time:</label>
+        <input type="time" id="reservation_time" name="reservation_time"><br>
+        <label for="number_of_people">Number of People:</label>
+        <input type="number" id="number_of_people" name="number_of_people"><br>
+        <button type="submit">Reserve Now</button>
+    </form>
+</body>
+</html>

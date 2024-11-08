@@ -1,0 +1,15 @@
+<!-- order_tracking.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Track Your Order</title>
+</head>
+<body>
+    <h1>Track Your Order</h1>
+    <form action="/api/method/restaurant_management.api.track_order" method="POST">
+        <label for="order_id">Order ID:</label>
+        <input type="text" id="order_id" name="order_id" required>
+        <button type="submit">Track Order</button>
+    </form>
+</body>
+</html>
